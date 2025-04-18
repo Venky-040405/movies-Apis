@@ -6,6 +6,9 @@ const app = express();
 
 // client -> middleware ->server
 
+
+app.use(express.json())
+
 connect();
 
 app.get('/', (req, res) => {
@@ -16,7 +19,7 @@ app.use('/movies', movies)
 
 
 
-app.listen(8939, () => {
-    console.log(`sucessfully http://localhost:${8939}`);
+app.listen(5500, () => {
+    console.log(`sucessfully http://localhost:${5500}`);
 
 }) 
