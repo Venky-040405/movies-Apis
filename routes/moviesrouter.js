@@ -1,5 +1,5 @@
 import express from 'express'
-import { moviesindex, moviescreate, moviesupdate, moviesdelete } from '../controllers/movies.controllers.js';
+import { moviesindex, moviescreate, moviesupdate, moviesdelete, moviesdetail } from '../controllers/movies.controllers.js';
 
 const router = express.Router();
 
@@ -8,11 +8,13 @@ const router = express.Router();
 //r - read
 router.get('/', moviesindex)
 
+
+router.get('/:id', moviesdetail)
 // c- create
 router.post('/', moviescreate)
 
 //u - update
-router.put('/', moviesupdate)
+router.put('/:id', moviesupdate)
 
 //d - delete
 router.delete('/', moviesdelete)

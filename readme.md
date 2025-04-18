@@ -13,3 +13,11 @@
 
 1. sql - (mysql,mariadb,postgresql)
 2. nosql - mongodb
+
+### mongodb atlas connection
+
+1. mongoose install
+2. mongodb create a authenitication
+3. connect together with localhost and db.js
+
+### mongodb working to create and load a schemma
