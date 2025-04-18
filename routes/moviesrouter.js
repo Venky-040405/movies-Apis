@@ -17,6 +17,6 @@ router.post('/', moviescreate)
 router.put('/:id', moviesupdate)
 
 //d - delete
-router.delete('/', moviesdelete)
+router.delete('/:id', moviesdelete)
 
 export default router;
